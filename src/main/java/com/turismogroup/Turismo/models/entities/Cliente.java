@@ -9,19 +9,26 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Rutadetalle")
+@Table(name="Cliente")
 @Getter @Setter @NoArgsConstructor
-public class RutaDetalle {
+public class Cliente {
 
 	@Id	
-private Long RutadetalleID;
+private Long DUI;
 	
-	private String Tarifa_por_viaje;
+	private String Nombre;
 	
-	private String Capacidad_vehiculo;
+	private String NumeroTelefono;
 	
-	private String RutaID;
+	private String Direccion;
 	
-	private String Matricula;
+	private String Residencia;
 	
+	private String Email;
+	
+	private String Genero;
+	
+	private String Estado;
+	
+	private String Tipo_persona;
 }
