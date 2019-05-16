@@ -11,21 +11,26 @@ import lombok.Setter;
 @Entity
 @Table(name="Metodosdepago")
 @Getter @Setter @NoArgsConstructor
-public class Metododepago {
+public class Ruta {
+
 	@Id	
-	private Long MPagoID;
+	private Long RutaID;
 		
-		private String Tipo_pago;
+		private String DireccionSalida;
 		
-		private String Tarjeta;
+		private String Kilometraje;
 		
-		private String EstadoPago;
+		private String ViajeID;
 		
-		private String Banco;
+		private String HoraSalida;
+		
+		private String HoraLlegada;
+		
+		private String Fecha;
+		
+		private String Disponibilidad;
 		
 		private String DUI;
 		
-		private String RutaID;
-		
-		private String RutadetalleID;
+		private String Asiento_Personas;
 }
