@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Ruta {
 
 	@Id	
-	private Long RutaID;
+	private Long id;
 		
 		private String DireccionSalida;
 		

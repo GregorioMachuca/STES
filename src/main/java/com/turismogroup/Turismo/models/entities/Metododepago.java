@@ -34,13 +34,13 @@ public class Metododepago {
 		private Ruta DUI;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="RutaId", nullable=true, unique = true)
+		@JoinColumn(name="ruta_id", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Ruta RutaID;
+		private Ruta ruta;
 		
-		@ManyToOne(fetch=FetchType.LAZY)
+		/*@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="RutadetalleId", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Ruta RutadetalleID;
+		private Ruta rutadetalle;*/
 		
 }
