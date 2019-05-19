@@ -19,16 +19,16 @@ import lombok.Setter;
 public class Ruta {
 
 	@Id	
-	private Long RutaID;
+	private Long Rutaid;
 		
 		private String DireccionSalida;
 		
 		private String Kilometraje;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="ViajeID", nullable=true, unique = true)
+		@JoinColumn(name="Viajeid", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Viaje ViajeID;
+		private Viaje Viajeid;
 		
 		private String HoraSalida;
 		
@@ -39,9 +39,9 @@ public class Ruta {
 		private String Disponibilidad;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="DUI", nullable=true, unique = true)
+		@JoinColumn(name="dui", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Cliente DUI;
+		private Cliente dui;
 		
-		private String Asiento_Personas;
+		private String AsientoPersonas;
 }

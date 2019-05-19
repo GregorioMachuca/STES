@@ -14,7 +14,7 @@ import lombok.Setter;
 public class Cliente {
 
 	@Id	
-private Long DUI;
+private Long dui;
 	
 	private String Nombre;
 	
@@ -30,5 +30,5 @@ private Long DUI;
 	
 	private String Estado;
 	
-	private String Tipo_persona;
+	private String Tipopersona;
 }

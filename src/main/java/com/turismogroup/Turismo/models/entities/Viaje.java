@@ -14,7 +14,7 @@ import lombok.Setter;
 public class Viaje {
 
 	@Id	
-private Long ViajeID;
+private Long Viajeid;
 	
 	private String ZonaTuristica;
 	
@@ -24,5 +24,5 @@ private Long ViajeID;
 	
 	private String Horarios;
 	
-	private String No_Telefono_lugar;
+	private String NoTelefonolugar;
 }

@@ -18,9 +18,9 @@ import lombok.Setter;
 @Getter @Setter @NoArgsConstructor
 public class Metododepago {
 	@Id	
-	private Long MPagoID;
+	private Long Mpagoid;
 		
-		private String Tipo_pago;
+		private String Tipopago;
 		
 		private String Tarjeta;
 		
@@ -29,18 +29,18 @@ public class Metododepago {
 		private String Banco;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="DUI", nullable=true, unique = true)
+		@JoinColumn(name="dui", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Cliente DUI;
+		private Cliente dui;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="RutaID", nullable=true, unique = true)
+		@JoinColumn(name="Rutaid", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Ruta RutaID;
+		private Ruta Rutaid;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="RutadetalleID", nullable=true, unique = true)
+		@JoinColumn(name="Rutadetalleid", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private RutaDetalle RutadetalleID;
+		private RutaDetalle Rutadetalleid;
 		
 }

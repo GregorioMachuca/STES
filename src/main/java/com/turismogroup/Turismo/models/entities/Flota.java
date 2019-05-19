@@ -24,11 +24,11 @@ public class Flota {
 	
 	private String Combustible;
 	
-	private String Tipo_vehiculo;
+	private String Tipovehiculo;
 	
 	private String Estado;
 	
-	private String Tarifa_kilometro;
+	private String Tarifakilometro;
 	
 	
 	
