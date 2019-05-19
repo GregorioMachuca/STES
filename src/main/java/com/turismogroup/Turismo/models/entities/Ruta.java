@@ -14,12 +14,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Metodosdepago")
+@Table(name="RUTA")
 @Getter @Setter @NoArgsConstructor
 public class Ruta {
 
 	@Id	
-	private Long id;
+	private Long RutaID;
 		
 		private String DireccionSalida;
 		
@@ -28,7 +28,7 @@ public class Ruta {
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="ViajeID", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Ruta ViajeID;
+		private Viaje ViajeID;
 		
 		private String HoraSalida;
 		
@@ -41,7 +41,7 @@ public class Ruta {
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="DUI", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Ruta DUI;
+		private Cliente DUI;
 		
 		private String Asiento_Personas;
 }
