@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Flota")
+@Table(name="FLOTA")
 @Getter @Setter @NoArgsConstructor
 public class Flota {
 
