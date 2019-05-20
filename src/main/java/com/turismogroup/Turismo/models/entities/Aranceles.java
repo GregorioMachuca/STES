@@ -21,23 +21,23 @@ public class Aranceles {
 	@Id	
 	private Long idaranceles;
 		
-		private String Costomayoresedad;
+		private String costomayoresedad;
 		
-		private String Costomenoresedad;
+		private String costomenoresedad;
 		
-		private String Costoentrada;
+		private String costoentrada;
 		
-		private String Costohospedaje;
+		private String costohospedaje;
 		
-		private String Costogrupopersonas;
+		private String costogrupopersonas;
 		
-		private String Costoporvehiculo;
+		private String costoporvehiculo;
 		
-		private String Costocarroextra;
+		private String costocarroextra;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="Viajeid", nullable=true, unique = true)
+		@JoinColumn(name="idviaje", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Viaje Viajeid;
+		private Viaje idviaje;
 		
 }

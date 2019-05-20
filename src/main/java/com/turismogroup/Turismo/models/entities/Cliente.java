@@ -16,19 +16,19 @@ public class Cliente {
 	@Id	
 private Long dui;
 	
-	private String Nombre;
+	private String nombre;
 	
-	private String NumeroTelefono;
+	private String numerotelefono;
 	
-	private String Direccion;
+	private String direccion;
 	
-	private String Residencia;
+	private String residencia;
 	
-	private String Email;
+	private String email;
 	
-	private String Genero;
+	private String genero;
 	
-	private String Estado;
+	private String estado;
 	
-	private String Tipopersona;
+	private String tipopersona;
 }

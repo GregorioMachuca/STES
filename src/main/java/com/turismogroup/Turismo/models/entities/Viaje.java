@@ -14,15 +14,15 @@ import lombok.Setter;
 public class Viaje {
 
 	@Id	
-private Long Viajeid;
+private Long idviaje;
 	
-	private String ZonaTuristica;
+	private String zonaturistica;
 	
-	private String Ubicacion;
+	private String ubicacion;
 	
-	private String Direccion;
+	private String direccion;
 	
-	private String Horarios;
+	private String horarios;
 	
-	private String NoTelefonolugar;
+	private String notelefonolugar;
 }
