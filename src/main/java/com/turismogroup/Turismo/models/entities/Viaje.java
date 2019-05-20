@@ -14,7 +14,7 @@ import lombok.Setter;
 public class Viaje {
 
 	@Id	
-private Long idviaje;
+private Long idViaje;
 	
 	private String zonaturistica;
 	

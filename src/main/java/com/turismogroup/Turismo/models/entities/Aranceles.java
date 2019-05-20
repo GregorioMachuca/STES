@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Aranceles {
 
 	@Id	
-	private Long idaranceles;
+	private Long idAranceles;
 		
 		private String costomayoresedad;
 		
@@ -36,8 +36,8 @@ public class Aranceles {
 		private String costocarroextra;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-		@JoinColumn(name="idviaje", nullable=true, unique = true)
+		@JoinColumn(name="idViaje", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-		private Viaje idviaje;
+		private Viaje idViaje;
 		
 }

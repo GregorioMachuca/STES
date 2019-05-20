@@ -14,7 +14,7 @@ import lombok.Setter;
 public class Flota {
 
 	@Id
-	private Long matricula;
+	private Long idMatricula;
 	
 	private String marca;
 	
