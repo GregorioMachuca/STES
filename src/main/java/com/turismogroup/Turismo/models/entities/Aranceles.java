@@ -19,8 +19,9 @@ import lombok.Setter;
 public class Aranceles {
 
 	@Id	
-	private Long IDaranceles;
+	private Long idAranceles;
 		
+<<<<<<< HEAD
 		private String Costomayoresedad;
 		
 		private String Costomenoresedad;
@@ -40,5 +41,25 @@ public class Aranceles {
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 		private Viaje ViajeID;
 	
+=======
+		private String costomayoresedad;
+		
+		private String costomenoresedad;
+		
+		private String costoentrada;
+		
+		private String costohospedaje;
+		
+		private String costogrupopersonas;
+		
+		private String costoporvehiculo;
+		
+		private String costocarroextra;
+		
+		@ManyToOne(fetch=FetchType.LAZY)
+		@JoinColumn(name="idViaje", nullable=true, unique = true)
+		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+		private Viaje idViaje;
+>>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
 		
 }

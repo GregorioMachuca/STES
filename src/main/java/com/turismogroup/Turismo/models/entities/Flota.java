@@ -14,21 +14,29 @@ import lombok.Setter;
 public class Flota {
 
 	@Id
-	private Long Matricula;
+	private Long idMatricula;
 	
-	private String Marca;
+	private String marca;
 	
-	private String Modelo;
+	private String modelo;
 	
-	private String Capacidad;
+	private String capacidad;
 	
-	private String Combustible;
+	private String combustible;
 	
+<<<<<<< HEAD
 	private String Tipovehiculo;
+=======
+	private String tipovehiculo;
+>>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
 	
-	private String Estado;
+	private String estado;
 	
+<<<<<<< HEAD
 	private String Tarifakilometro;
+=======
+	private String tarifakilometro;
+>>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
 	
 	
 	
