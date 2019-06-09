@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Cliente")
+@Table(name="CLIENTE")
 @Getter @Setter @NoArgsConstructor
 public class Cliente {
 
@@ -30,5 +30,5 @@ private Long DUI;
 	
 	private String Estado;
 	
-	private String Tipo_persona;
+	private String Tipopersona;
 }

@@ -1,35 +1,44 @@
 package com.turismogroup.Turismo.models.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Aranceles")
+@Table(name="ARANCELES")
 @Getter @Setter @NoArgsConstructor
 public class Aranceles {
 
 	@Id	
 	private Long IDaranceles;
 		
-		private String Costo_mayoresedad;
+		private String Costomayoresedad;
 		
-		private String Costo_menoresedad;
+		private String Costomenoresedad;
 		
-		private String Costo_entrada;
+		private String Costoentrada;
 		
-		private String Costo_hospedaje;
+		private String Costohospedaje;
 		
-		private String Costo_grupopersonas;
+		private String Costogrupopersonas;
 		
-		private String Costo_por_vehiculo;
+		private String Costoporvehiculo;
 		
-		private String Costo_carroextra;
+		private String Costocarroextra;
 		
-		private String ViajeID;
+		@ManyToOne(fetch=FetchType.LAZY)
+		@JoinColumn(name="ViajeID", nullable=true, unique = true)
+		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+		private Viaje ViajeID;
+	
 		
 }

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Flota")
+@Table(name="FLOTA")
 @Getter @Setter @NoArgsConstructor
 public class Flota {
 
@@ -24,11 +24,11 @@ public class Flota {
 	
 	private String Combustible;
 	
-	private String Tipo_vehiculo;
+	private String Tipovehiculo;
 	
 	private String Estado;
 	
-	private String Tarifa_kilometro;
+	private String Tarifakilometro;
 	
 	
 	

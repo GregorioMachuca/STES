@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="Viaje")
+@Table(name="VIAJE")
 @Getter @Setter @NoArgsConstructor
 public class Viaje {
 
@@ -24,5 +24,5 @@ private Long ViajeID;
 	
 	private String Horarios;
 	
-	private String No_Telefono_lugar;
+	private String NoTelefonolugar;
 }
