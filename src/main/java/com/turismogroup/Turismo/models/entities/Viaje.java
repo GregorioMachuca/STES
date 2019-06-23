@@ -24,9 +24,9 @@ private Long idViaje;
 	
 	private String horarios;
 	
-<<<<<<< HEAD
+
 	private String NoTelefonolugar;
-=======
+
 	private String notelefonolugar;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 }

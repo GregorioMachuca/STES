@@ -30,9 +30,9 @@ private Long dui;
 	
 	private String estado;
 	
-<<<<<<< HEAD
+
 	private String Tipopersona;
-=======
+
 	private String tipopersona;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 }

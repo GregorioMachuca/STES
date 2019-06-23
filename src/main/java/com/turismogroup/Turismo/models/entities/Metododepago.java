@@ -14,21 +14,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-<<<<<<< HEAD
-@Table(name="METODOS_DE_PAGO")
-=======
+
+
 @Table(name="METODOSDEPAGO")
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 @Getter @Setter @NoArgsConstructor
 public class Metododepago {
 	@Id	
 	private Long idMpago;
 		
-<<<<<<< HEAD
+
 		private String Tipopago;
-=======
+
 		private String tipopago;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 		
 		private String tarjeta;
 		
@@ -39,29 +38,29 @@ public class Metododepago {
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="dui", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-<<<<<<< HEAD
+
 		private Cliente DUI;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="RutaID", nullable=true, unique = true)
-=======
+
 		private Cliente dui;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="idRuta", nullable=true, unique = true)
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 		private Ruta idRuta;
 		
 		@ManyToOne(fetch=FetchType.LAZY)
-<<<<<<< HEAD
+
 		@JoinColumn(name="RutadetalleID", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 		private RutaDetalle RutadetalleID;
-=======
+
 		@JoinColumn(name="idetalle", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 		private RutaDetalle idetalle;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 		
 }

@@ -24,19 +24,19 @@ public class Flota {
 	
 	private String combustible;
 	
-<<<<<<< HEAD
+
 	private String Tipovehiculo;
-=======
+
 	private String tipovehiculo;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 	
 	private String estado;
 	
-<<<<<<< HEAD
+
 	private String Tarifakilometro;
-=======
+
 	private String tarifakilometro;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 	
 	
 	

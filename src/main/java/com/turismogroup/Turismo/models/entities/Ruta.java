@@ -25,16 +25,16 @@ public class Ruta {
 		
 		private String Kilometraje;
 		
-<<<<<<< HEAD
+
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="ViajeID", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 		private Viaje ViajeID;
-=======
+
 		private String horasalida;
 		
 		private String horallegada;
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 		
 		private String fecha;
 		
@@ -50,13 +50,13 @@ public class Ruta {
 		@ManyToOne(fetch=FetchType.LAZY)
 		@JoinColumn(name="idViaje", nullable=true, unique = true)
 		@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-<<<<<<< HEAD
+
 		private Cliente DUI;
 		
 		private String AsientoPersonas;
-=======
+
 		private Viaje idViaje;
 		
 		
->>>>>>> 5ddf8dc272ee8a54608b43f14a07cbd61d993ce0
+
 }
